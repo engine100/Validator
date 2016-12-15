@@ -33,6 +33,7 @@ public class LoginActivity extends Activity {
         mUserName = $(R.id.user_name);
         mUserPass = $(R.id.user_pass);
         mLoginButton = $(R.id.btn_login);
+
         mBar = $(R.id.bar);
         mIdCard = $(R.id.idcard);
         mCheckManager.addContainer(new UserNameCheckContainer(mUserName, null));
