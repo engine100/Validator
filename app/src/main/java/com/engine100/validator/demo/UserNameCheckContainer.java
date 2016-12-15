@@ -26,7 +26,7 @@ public class UserNameCheckContainer extends CheckContainer<EditText> {
 		CheckedResult result = new CheckedResult();
 		String name = getValue();
 		if (!name.equals("zcc")) {
-			result.setResult(false, "用户名错误");
+			result.setResult(false, "用户名是zcc");
 		}
 
 		else {

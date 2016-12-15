@@ -26,7 +26,7 @@ public class UserPassCheckContainer extends CheckContainer<EditText> {
 		CheckedResult result = new CheckedResult();
 		String name = getValue();
 		if (!name.equals("100")) {
-			result.setResult(false, "密码错误");
+			result.setResult(false, "密码是100");
 		} else {
 			result.setResult(true);
 		}

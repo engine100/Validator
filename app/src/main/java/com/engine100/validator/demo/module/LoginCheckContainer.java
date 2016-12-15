@@ -28,11 +28,11 @@ public class LoginCheckContainer extends CheckContainer<Void> {
 		String name = nameTV.getText().toString();
 		String pass = passTV.getText().toString();
 		if (!name.equals("zcc")) {
-			result.setResult(false, "用户名错误");
+			result.setResult(false, "用户名zcc");
 		}
 
 		else if (!pass.equals("100")) {
-			result.setResult(false, "密码错误");
+			result.setResult(false, "密码100");
 		}
 
 		else {
