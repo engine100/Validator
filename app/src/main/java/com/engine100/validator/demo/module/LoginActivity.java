@@ -68,6 +68,7 @@ public class LoginActivity extends Activity {
                             Toast.makeText(getBaseContext(), result.getMsg(), Toast.LENGTH_SHORT).show();
                             return;
                         }
+                        Toast.makeText(getBaseContext(), "成功!", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
