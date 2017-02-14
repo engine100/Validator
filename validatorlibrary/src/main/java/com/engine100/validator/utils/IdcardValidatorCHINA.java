@@ -109,7 +109,7 @@ public class IdcardValidatorCHINA {
 	 * </p>
 	 * 
 	 * @param idcard
-	 * @return
+	 * @return 成功
 	 */
 	public boolean valid18(String idcard) {
 		// 非18位为假
@@ -155,7 +155,7 @@ public class IdcardValidatorCHINA {
 	 * 验证15位身份证的合法性,该方法验证不准确，最好是将15转为18位后再判断，该类中已提供。
 	 * 
 	 * @param idcard
-	 * @return
+	 * @return 成功
 	 */
 
 	public boolean valid15(String idcard) {
@@ -249,7 +249,7 @@ public class IdcardValidatorCHINA {
 	 * 将15位的身份证转成18位身份证
 	 * 
 	 * @param idcard
-	 * @return
+	 * @return 成功
 	 */
 	public String convert15IdTo18Id(String idcard) {
 		String idcard17 = null;
@@ -304,7 +304,7 @@ public class IdcardValidatorCHINA {
 	 * 15位和18位身份证号码的基本数字和位数验校
 	 * 
 	 * @param idcard
-	 * @return
+	 * @return 成功
 	 */
 	private boolean isIdcard(String idcard) {
 		return idcard == null || "".equals(idcard) ? false
@@ -315,7 +315,7 @@ public class IdcardValidatorCHINA {
 	 * 15位身份证号码的基本数字和位数验校
 	 * 
 	 * @param idcard
-	 * @return
+	 * @return 成功
 	 */
 	private boolean is15Idcard(String idcard) {
 		return idcard == null || "".equals(idcard) ? false
@@ -326,7 +326,7 @@ public class IdcardValidatorCHINA {
 	 * 18位身份证号码的基本数字和位数验校
 	 * 
 	 * @param idcard
-	 * @return
+	 * @return 成功
 	 */
 	private boolean is18Idcard(String idcard) {
 		return Pattern.matches("^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}([\\d|x|X]{1})$",
@@ -337,7 +337,7 @@ public class IdcardValidatorCHINA {
 	 * 数字验证
 	 * 
 	 * @param str
-	 * @return
+	 * @return 成功
 	 */
 	private boolean isDigital(String str) {
 		return str == null || "".equals(str) ? false : str.matches("^[0-9]*$");
@@ -347,7 +347,7 @@ public class IdcardValidatorCHINA {
 	 * 将身份证的每位和对应位的加权因子相乘之后，再得到和值
 	 * 
 	 * @param bit
-	 * @return
+	 * @return 成功
 	 */
 	private int getPowerSum(int[] bit) {
 
@@ -418,7 +418,7 @@ public class IdcardValidatorCHINA {
 	 * 将字符数组转为整型数组
 	 * 
 	 * @param c
-	 * @return
+	 * @return 成功
 	 * @throws NumberFormatException
 	 */
 	private int[] converCharToInt(char[] c) throws NumberFormatException {

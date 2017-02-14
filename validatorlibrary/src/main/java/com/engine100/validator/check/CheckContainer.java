@@ -5,13 +5,6 @@ import com.engine100.validator.input.InputView;
 
 /**
  * 把输入控件包装起来，用来做校验
- *
- * @description</br>
- * 
- * @author ZhuChengCheng
- * @github https://github.com/engine100
- * @time 2016年12月4日 - 下午2:48:16
- * @param <T>
  */
 public abstract class CheckContainer<T> implements InputView {
 

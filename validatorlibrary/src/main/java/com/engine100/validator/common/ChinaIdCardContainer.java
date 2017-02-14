@@ -7,11 +7,6 @@ import com.engine100.validator.utils.IdcardValidatorCHINA;
 
 /**
  * 中国的居民身份证校验，15位和18位
- * @description</br>
- * 
- * @author ZhuChengCheng
- * @github https://github.com/engine100
- * @time 2016年12月7日 - 上午8:58:52
  */
 public class ChinaIdCardContainer extends TextViewCheckContainer {
 

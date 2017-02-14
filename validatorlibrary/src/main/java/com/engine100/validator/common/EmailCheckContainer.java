@@ -9,11 +9,6 @@ import com.engine100.validator.common.base.TextViewCheckContainer;
 
 /**
  * 电子邮件校验
- * @description</br>
- * 
- * @author ZhuChengCheng
- * @github https://github.com/engine100
- * @time 2016年12月7日 - 上午8:59:17
  */
 public class EmailCheckContainer extends TextViewCheckContainer {
 

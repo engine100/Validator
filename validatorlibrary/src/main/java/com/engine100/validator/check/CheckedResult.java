@@ -2,11 +2,6 @@ package com.engine100.validator.check;
 
 /**
  * 校验结果
- * @description</br>
- * 
- * @author ZhuChengCheng
- * @github https://github.com/engine100
- * @time 2016年12月4日 - 上午5:40:33
  */
 public class CheckedResult {
 

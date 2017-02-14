@@ -7,11 +7,6 @@ import com.engine100.validator.input.InputView;
 
 /**
  * 校验工具
- * @description</br>
- * 
- * @author ZhuChengCheng
- * @github https://github.com/engine100
- * @time 2016年12月4日 - 下午11:36:57
  */
 public class CheckContainerManager {
 	private List<InputView> mInputViews;
@@ -37,8 +32,6 @@ public class CheckContainerManager {
 
 	/**
 	 * 同步校验
-	 * 
-	 * @return
 	 */
 	public CheckedResult checkValuesSync() {
 
@@ -54,11 +47,6 @@ public class CheckContainerManager {
 		return CheckedResult.SUCCESS_RESULT;
 	}
 
-	/**
-	 * 
-	 * @see {@link #checkValuesSync}
-	 * @return
-	 */
 	@Deprecated
 	public CheckedResult checkValues() {
 		return checkValuesSync();
@@ -70,8 +58,6 @@ public class CheckContainerManager {
 
 	/**
 	 * 异步校验
-	 * 
-	 * @param callBack
 	 */
 	public void checkValues(final CheckListener callBack) {
 		if (callBack == null) {
