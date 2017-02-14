@@ -26,14 +26,13 @@ public class LoginActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mCheckManager = new CheckContainerManager();
         mUserName = $(R.id.user_name);
         mUserPass = $(R.id.user_pass);
         mLoginButton = $(R.id.btn_login);
-
         mBar = $(R.id.bar);
         mIdCard = $(R.id.idcard);
         mCheckManager.addContainer(new UserNameCheckContainer(mUserName, null));
@@ -52,15 +51,15 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                // CheckedResult result = mCheckManager.checkValues();
-                // if (!result.Success()) {
-                // Toast.makeText(getBaseContext(), result.getMsg(),
-                // Toast.LENGTH_SHORT).show();
-                // return;
-                // }
-                //
-                // Toast.makeText(getBaseContext(), "成功",
-                // Toast.LENGTH_SHORT).show();
+//                 CheckedResult result = mCheckManager.checkValues();
+//                if (!result.Success()) {
+//                    Toast.makeText(getBaseContext(), result.getMsg(),
+//                            Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//
+//                Toast.makeText(getBaseContext(), "成功",
+//                        Toast.LENGTH_SHORT).show();
 
                 mCheckManager.checkValues(new CheckContainerManager.CheckListener() {
                     @Override
@@ -73,6 +72,9 @@ public class LoginActivity extends Activity {
                     }
                 });
             }
+        });
+        mBar.setOnClickListener( (e) -> {
+            System.out.println("Action !! Lambda expressions Rocks");
         });
     }
 
